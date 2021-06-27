@@ -12,9 +12,7 @@ func SettingByKakao(host string, apiKey string) {
 	kakaoApiKey = apiKey
 }
 
-/**
-url : https://dapi.kakao.com/v2/local/search/address?query=서초동
-*/
+// GetAddressContentsByKakaoApi /**
 func GetAddressContentsByKakaoApi(address string) (body []byte, err error) {
 	url := kakaoHost + "/v2/local/search/address.json"
 
